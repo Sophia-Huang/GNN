@@ -35,11 +35,11 @@ class Network(Data):
 
     @property
     def author_paper_relation_num(self):
-        return len(self.author_paper)
+        return self.author_paper.shape[1]
 
     @property
     def author_institutions_relation_num(self):
-        return len(self.author_institutions)
+        return self.author_institutions.shape[1]
 
 if __name__ == "__main__":
     """
